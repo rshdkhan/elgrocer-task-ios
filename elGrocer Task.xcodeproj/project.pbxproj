@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD52891439200724ADE /* AppDelegate.swift */; };
+		47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD72891439200724ADE /* SceneDelegate.swift */; };
+		47DF3BDA2891439200724ADE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD92891439200724ADE /* ViewController.swift */; };
+		47DF3BDD2891439200724ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DF3BDB2891439200724ADE /* Main.storyboard */; };
+		47DF3BDF2891439600724ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DF3BDE2891439600724ADE /* Assets.xcassets */; };
+		47DF3BE22891439600724ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DF3BE02891439600724ADE /* LaunchScreen.storyboard */; };
+		47DF3BED2891439700724ADE /* elGrocer_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BEC2891439700724ADE /* elGrocer_TaskTests.swift */; };
+		47DF3BF72891439700724ADE /* elGrocer_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BF62891439700724ADE /* elGrocer_TaskUITests.swift */; };
+		47DF3BF92891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BF82891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47DF3BE92891439700724ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47DF3BCA2891439200724ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47DF3BD12891439200724ADE;
+			remoteInfo = "elGrocer Task";
+		};
+		47DF3BF32891439700724ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47DF3BCA2891439200724ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47DF3BD12891439200724ADE;
+			remoteInfo = "elGrocer Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47DF3BD22891439200724ADE /* elGrocer Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "elGrocer Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DF3BD52891439200724ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47DF3BD72891439200724ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		47DF3BD92891439200724ADE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47DF3BDC2891439200724ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47DF3BDE2891439600724ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47DF3BE12891439600724ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47DF3BE32891439600724ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47DF3BE82891439700724ADE /* elGrocer TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "elGrocer TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DF3BEC2891439700724ADE /* elGrocer_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elGrocer_TaskTests.swift; sourceTree = "<group>"; };
+		47DF3BF22891439700724ADE /* elGrocer TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "elGrocer TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DF3BF62891439700724ADE /* elGrocer_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elGrocer_TaskUITests.swift; sourceTree = "<group>"; };
+		47DF3BF82891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elGrocer_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47DF3BCF2891439200724ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DF3BE52891439600724ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DF3BEF2891439700724ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47DF3BC92891439200724ADE = {
+			isa = PBXGroup;
+			children = (
+				47DF3BD42891439200724ADE /* elGrocer Task */,
+				47DF3BEB2891439700724ADE /* elGrocer TaskTests */,
+				47DF3BF52891439700724ADE /* elGrocer TaskUITests */,
+				47DF3BD32891439200724ADE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47DF3BD32891439200724ADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47DF3BD22891439200724ADE /* elGrocer Task.app */,
+				47DF3BE82891439700724ADE /* elGrocer TaskTests.xctest */,
+				47DF3BF22891439700724ADE /* elGrocer TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47DF3BD42891439200724ADE /* elGrocer Task */ = {
+			isa = PBXGroup;
+			children = (
+				47DF3BD52891439200724ADE /* AppDelegate.swift */,
+				47DF3BD72891439200724ADE /* SceneDelegate.swift */,
+				47DF3BD92891439200724ADE /* ViewController.swift */,
+				47DF3BDB2891439200724ADE /* Main.storyboard */,
+				47DF3BDE2891439600724ADE /* Assets.xcassets */,
+				47DF3BE02891439600724ADE /* LaunchScreen.storyboard */,
+				47DF3BE32891439600724ADE /* Info.plist */,
+			);
+			path = "elGrocer Task";
+			sourceTree = "<group>";
+		};
+		47DF3BEB2891439700724ADE /* elGrocer TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				47DF3BEC2891439700724ADE /* elGrocer_TaskTests.swift */,
+			);
+			path = "elGrocer TaskTests";
+			sourceTree = "<group>";
+		};
+		47DF3BF52891439700724ADE /* elGrocer TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47DF3BF62891439700724ADE /* elGrocer_TaskUITests.swift */,
+				47DF3BF82891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift */,
+			);
+			path = "elGrocer TaskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47DF3BD12891439200724ADE /* elGrocer Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47DF3BFC2891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer Task" */;
+			buildPhases = (
+				47DF3BCE2891439200724ADE /* Sources */,
+				47DF3BCF2891439200724ADE /* Frameworks */,
+				47DF3BD02891439200724ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "elGrocer Task";
+			productName = "elGrocer Task";
+			productReference = 47DF3BD22891439200724ADE /* elGrocer Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47DF3BE72891439600724ADE /* elGrocer TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47DF3BFF2891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer TaskTests" */;
+			buildPhases = (
+				47DF3BE42891439600724ADE /* Sources */,
+				47DF3BE52891439600724ADE /* Frameworks */,
+				47DF3BE62891439600724ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47DF3BEA2891439700724ADE /* PBXTargetDependency */,
+			);
+			name = "elGrocer TaskTests";
+			productName = "elGrocer TaskTests";
+			productReference = 47DF3BE82891439700724ADE /* elGrocer TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47DF3BF12891439700724ADE /* elGrocer TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47DF3C022891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer TaskUITests" */;
+			buildPhases = (
+				47DF3BEE2891439700724ADE /* Sources */,
+				47DF3BEF2891439700724ADE /* Frameworks */,
+				47DF3BF02891439700724ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47DF3BF42891439700724ADE /* PBXTargetDependency */,
+			);
+			name = "elGrocer TaskUITests";
+			productName = "elGrocer TaskUITests";
+			productReference = 47DF3BF22891439700724ADE /* elGrocer TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47DF3BCA2891439200724ADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					47DF3BD12891439200724ADE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					47DF3BE72891439600724ADE = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 47DF3BD12891439200724ADE;
+					};
+					47DF3BF12891439700724ADE = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 47DF3BD12891439200724ADE;
+					};
+				};
+			};
+			buildConfigurationList = 47DF3BCD2891439200724ADE /* Build configuration list for PBXProject "elGrocer Task" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47DF3BC92891439200724ADE;
+			productRefGroup = 47DF3BD32891439200724ADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47DF3BD12891439200724ADE /* elGrocer Task */,
+				47DF3BE72891439600724ADE /* elGrocer TaskTests */,
+				47DF3BF12891439700724ADE /* elGrocer TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47DF3BD02891439200724ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DF3BE22891439600724ADE /* LaunchScreen.storyboard in Resources */,
+				47DF3BDF2891439600724ADE /* Assets.xcassets in Resources */,
+				47DF3BDD2891439200724ADE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DF3BE62891439600724ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DF3BF02891439700724ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47DF3BCE2891439200724ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DF3BDA2891439200724ADE /* ViewController.swift in Sources */,
+				47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */,
+				47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DF3BE42891439600724ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DF3BED2891439700724ADE /* elGrocer_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DF3BEE2891439700724ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DF3BF92891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift in Sources */,
+				47DF3BF72891439700724ADE /* elGrocer_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47DF3BEA2891439700724ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47DF3BD12891439200724ADE /* elGrocer Task */;
+			targetProxy = 47DF3BE92891439700724ADE /* PBXContainerItemProxy */;
+		};
+		47DF3BF42891439700724ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47DF3BD12891439200724ADE /* elGrocer Task */;
+			targetProxy = 47DF3BF32891439700724ADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47DF3BDB2891439200724ADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47DF3BDC2891439200724ADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47DF3BE02891439600724ADE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47DF3BE12891439600724ADE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47DF3BFA2891439700724ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47DF3BFB2891439700724ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47DF3BFD2891439700724ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "elGrocer Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elgrocer.task.elGrocer-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47DF3BFE2891439700724ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "elGrocer Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elgrocer.task.elGrocer-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47DF3C002891439700724ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elgrocer.task.elGrocer-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/elGrocer Task.app/elGrocer Task";
+			};
+			name = Debug;
+		};
+		47DF3C012891439700724ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elgrocer.task.elGrocer-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/elGrocer Task.app/elGrocer Task";
+			};
+			name = Release;
+		};
+		47DF3C032891439700724ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elgrocer.task.elGrocer-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "elGrocer Task";
+			};
+			name = Debug;
+		};
+		47DF3C042891439700724ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elgrocer.task.elGrocer-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "elGrocer Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47DF3BCD2891439200724ADE /* Build configuration list for PBXProject "elGrocer Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47DF3BFA2891439700724ADE /* Debug */,
+				47DF3BFB2891439700724ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47DF3BFC2891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47DF3BFD2891439700724ADE /* Debug */,
+				47DF3BFE2891439700724ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47DF3BFF2891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47DF3C002891439700724ADE /* Debug */,
+				47DF3C012891439700724ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47DF3C022891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47DF3C032891439700724ADE /* Debug */,
+				47DF3C042891439700724ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47DF3BCA2891439200724ADE /* Project object */;
+}
