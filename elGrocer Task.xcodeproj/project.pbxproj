@@ -16,6 +16,11 @@
 		47DF3BED2891439700724ADE /* elGrocer_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BEC2891439700724ADE /* elGrocer_TaskTests.swift */; };
 		47DF3BF72891439700724ADE /* elGrocer_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BF62891439700724ADE /* elGrocer_TaskUITests.swift */; };
 		47DF3BF92891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BF82891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift */; };
+		47DF784D2891E5E3003AB721 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF784C2891E5E3003AB721 /* NetworkClient.swift */; };
+		47DF78502891E67B003AB721 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF784F2891E67B003AB721 /* Response.swift */; };
+		47DF78532891E892003AB721 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF78522891E892003AB721 /* Endpoint.swift */; };
+		47DF78562891EA13003AB721 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF78552891EA13003AB721 /* Encoder.swift */; };
+		47DF78582891EEA4003AB721 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF78572891EEA4003AB721 /* ResponseHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		47DF3BF22891439700724ADE /* elGrocer TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "elGrocer TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DF3BF62891439700724ADE /* elGrocer_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elGrocer_TaskUITests.swift; sourceTree = "<group>"; };
 		47DF3BF82891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elGrocer_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47DF784C2891E5E3003AB721 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		47DF784F2891E67B003AB721 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		47DF78522891E892003AB721 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		47DF78552891EA13003AB721 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		47DF78572891EEA4003AB721 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		47DF3BD42891439200724ADE /* elGrocer Task */ = {
 			isa = PBXGroup;
 			children = (
+				47DF784A2891E592003AB721 /* Network */,
 				47DF3BD52891439200724ADE /* AppDelegate.swift */,
 				47DF3BD72891439200724ADE /* SceneDelegate.swift */,
 				47DF3BD92891439200724ADE /* ViewController.swift */,
@@ -125,6 +136,26 @@
 				47DF3BF82891439700724ADE /* elGrocer_TaskUITestsLaunchTests.swift */,
 			);
 			path = "elGrocer TaskUITests";
+			sourceTree = "<group>";
+		};
+		47DF784A2891E592003AB721 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				47DF78552891EA13003AB721 /* Encoder.swift */,
+				47DF784E2891E66A003AB721 /* Response */,
+				47DF784C2891E5E3003AB721 /* NetworkClient.swift */,
+				47DF78522891E892003AB721 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		47DF784E2891E66A003AB721 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				47DF784F2891E67B003AB721 /* Response.swift */,
+				47DF78572891EEA4003AB721 /* ResponseHandler.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +291,12 @@
 			files = (
 				47DF3BDA2891439200724ADE /* ViewController.swift in Sources */,
 				47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */,
+				47DF78562891EA13003AB721 /* Encoder.swift in Sources */,
 				47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */,
+				47DF784D2891E5E3003AB721 /* NetworkClient.swift in Sources */,
+				47DF78582891EEA4003AB721 /* ResponseHandler.swift in Sources */,
+				47DF78532891E892003AB721 /* Endpoint.swift in Sources */,
+				47DF78502891E67B003AB721 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
