@@ -20,6 +20,10 @@ extension NetworkClient {
         var request = URLRequest(url: baseUrl.appendingPathComponent(endpoint.path))
         request.httpMethod = endpoint.method.rawValue
         
+        if endpoint.headers != nil {
+            request.allHTTPHeaderFields = endpoint.headers
+        }
+        
         do {
             try endpoint.encoding.encode(urlRequest: &request, with: endpoint.parameters)
         } catch {

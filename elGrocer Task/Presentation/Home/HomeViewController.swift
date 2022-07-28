@@ -22,6 +22,11 @@ class HomeViewController: UIViewController {
 //        self.tableView.estimatedRowHeight = 200
         
         self.tableView.register(UINib(nibName: HomeTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: HomeTableViewCell.identifier)
+        
+        
+        let network = NetworkClientImp(urlSession: URLSession(configuration: .default), responseHandler: ResponseHandlerImp())
+        let repository = ProductRepositoryImp(networkClient: network)
+        repository.getCategories()
     }
     
     override func viewWillAppear(_ animated: Bool) {
