@@ -45,8 +45,9 @@ class NetworkClientImp: NetworkClient {
     
     func request<T>(endpoint: Endpoint, type: T.Type, completion: @escaping requestCompletion<T>) where T: Codable {
         do {
-            let request = try self.urlRequest(endpoint: endpoint)
+            var request = try self.urlRequest(endpoint: endpoint)
             
+            request.cachePolicy = .returnCacheDataElseLoad
             let task = urlSession.dataTask(with: request) { data, response, error in
                 let response = self.responseHandler.handle(to: type, data: data, response: response, error: error)
                 completion(response)
@@ -57,4 +58,7 @@ class NetworkClientImp: NetworkClient {
             
         }
     }
+    
 }
+
+

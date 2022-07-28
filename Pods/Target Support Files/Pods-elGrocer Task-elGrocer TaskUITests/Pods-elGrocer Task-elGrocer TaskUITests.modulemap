@@ -1,0 +1,6 @@
+framework module Pods_elGrocer_Task_elGrocer_TaskUITests {
+  umbrella header "Pods-elGrocer Task-elGrocer TaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

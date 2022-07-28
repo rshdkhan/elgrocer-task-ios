@@ -9,7 +9,7 @@ import Foundation
 
 enum ProductEndpoint {
     case fetchCategories(retailerID: Int)
-    case fetchProducts
+    case fetchProducts(categoryID: Int, retailerID: Int, offset: Int, limit: Int)
 }
 
 extension ProductEndpoint: Endpoint {
@@ -33,7 +33,7 @@ extension ProductEndpoint: Endpoint {
     
     var headers: HttpHeaders? {
         return [
-            "access_token": "uR0ZIzfv2IwDy0jiw-rfV_JR3XZJvZ0_0ppuVmGbGFg",
+            "access_token": "g_9Fi4dyhoUaTW0ma5Ok9lB8uOTZR0vJoqR9IAQo5Yk",
             "Locale": "en"
         ]
     }
@@ -42,8 +42,14 @@ extension ProductEndpoint: Endpoint {
         switch self {
             case .fetchCategories(let retailerID):
                 return ["retailer_id": retailerID, "delivery_time": Date().millisecondsSince1970]
-            case .fetchProducts:
-                return [:]
+        case .fetchProducts(let categoryID, let retailerID, let offset, let limit):
+                return [
+                    "category_id": categoryID,
+                    "retailer_id": retailerID,
+                    "delivery_time": Date().millisecondsSince1970,
+                    "offset": offset,
+                    "limit": limit
+                ]
         }
     }
     

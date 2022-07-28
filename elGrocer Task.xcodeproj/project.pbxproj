@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C64EF37569CDA733DC4C00 /* Pods_elGrocer_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B9206957A6F0F0C6EF9420 /* Pods_elGrocer_Task.framework */; };
 		47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD52891439200724ADE /* AppDelegate.swift */; };
 		47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD72891439200724ADE /* SceneDelegate.swift */; };
 		47DF3BDD2891439200724ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DF3BDB2891439200724ADE /* Main.storyboard */; };
@@ -33,6 +34,10 @@
 		47DF787728920753003AB721 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF787628920753003AB721 /* Category.swift */; };
 		47DF78792892078C003AB721 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF78782892078C003AB721 /* AccessToken.swift */; };
 		47DF787B289207A9003AB721 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF787A289207A9003AB721 /* Product.swift */; };
+		47DF787F28921086003AB721 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF787E28921086003AB721 /* HomeViewPresenter.swift */; };
+		47DF78822892A834003AB721 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF78812892A834003AB721 /* UIViewExtension.swift */; };
+		9F4B4CBD64BFD9C3A5243936 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF74D9818184A73945FE590 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework */; };
+		A900361C8E204A799EFD085A /* Pods_elGrocer_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E9984EF5959EB7B91F1E4 /* Pods_elGrocer_TaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071251DF7170DB8EE644FE2C /* Pods-elGrocer TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-elGrocer TaskTests/Pods-elGrocer TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DF74D9818184A73945FE590 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elGrocer_Task_elGrocer_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA69D917936F574F505BB98 /* Pods-elGrocer Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task.release.xcconfig"; path = "Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task.release.xcconfig"; sourceTree = "<group>"; };
 		47DF3BD22891439200724ADE /* elGrocer Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "elGrocer Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DF3BD52891439200724ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47DF3BD72891439200724ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,14 @@
 		47DF787628920753003AB721 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		47DF78782892078C003AB721 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		47DF787A289207A9003AB721 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		47DF787E28921086003AB721 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		47DF78812892A834003AB721 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		493E9984EF5959EB7B91F1E4 /* Pods_elGrocer_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elGrocer_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A925EAF5223EF6D2684912 /* Pods-elGrocer TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer TaskTests.release.xcconfig"; path = "Target Support Files/Pods-elGrocer TaskTests/Pods-elGrocer TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		A59965AFB10D8D66F7E1FD4C /* Pods-elGrocer Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task.debug.xcconfig"; path = "Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task.debug.xcconfig"; sourceTree = "<group>"; };
+		D049C019452B02EA4C45907A /* Pods-elGrocer Task-elGrocer TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task-elGrocer TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-elGrocer Task-elGrocer TaskUITests/Pods-elGrocer Task-elGrocer TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D75890B1308CC43DC7F7AF8E /* Pods-elGrocer Task-elGrocer TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task-elGrocer TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-elGrocer Task-elGrocer TaskUITests/Pods-elGrocer Task-elGrocer TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0B9206957A6F0F0C6EF9420 /* Pods_elGrocer_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elGrocer_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C64EF37569CDA733DC4C00 /* Pods_elGrocer_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A900361C8E204A799EFD085A /* Pods_elGrocer_TaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4B4CBD64BFD9C3A5243936 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +136,8 @@
 				47DF3BEB2891439700724ADE /* elGrocer TaskTests */,
 				47DF3BF52891439700724ADE /* elGrocer TaskUITests */,
 				47DF3BD32891439200724ADE /* Products */,
+				67B903A9EB745A7FCA68FE8F /* Pods */,
+				DA7FC3E698664A0262DB62C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +154,7 @@
 		47DF3BD42891439200724ADE /* elGrocer Task */ = {
 			isa = PBXGroup;
 			children = (
+				47DF78802892A81C003AB721 /* Extension */,
 				47DF787528920744003AB721 /* Model */,
 				47DF78712891FAFB003AB721 /* Repository */,
 				47DF78592891F548003AB721 /* Presentation */,
@@ -187,7 +209,8 @@
 		47DF78592891F548003AB721 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				47DF785A2891F548003AB721 /* Home */,
+				47DF787D28921068003AB721 /* Presenter */,
+				47DF787C28921048003AB721 /* UI */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -195,9 +218,9 @@
 		47DF785A2891F548003AB721 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				47DF785F2891F548003AB721 /* TableViewCell */,
 				47DF785B2891F548003AB721 /* CollectionCell */,
 				47DF785E2891F548003AB721 /* HomeViewController.swift */,
-				47DF785F2891F548003AB721 /* TableViewCell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -258,6 +281,53 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		47DF787C28921048003AB721 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47DF785A2891F548003AB721 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47DF787D28921068003AB721 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				47DF787E28921086003AB721 /* HomeViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		47DF78802892A81C003AB721 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47DF78812892A834003AB721 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		67B903A9EB745A7FCA68FE8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59965AFB10D8D66F7E1FD4C /* Pods-elGrocer Task.debug.xcconfig */,
+				1AA69D917936F574F505BB98 /* Pods-elGrocer Task.release.xcconfig */,
+				D75890B1308CC43DC7F7AF8E /* Pods-elGrocer Task-elGrocer TaskUITests.debug.xcconfig */,
+				D049C019452B02EA4C45907A /* Pods-elGrocer Task-elGrocer TaskUITests.release.xcconfig */,
+				071251DF7170DB8EE644FE2C /* Pods-elGrocer TaskTests.debug.xcconfig */,
+				93A925EAF5223EF6D2684912 /* Pods-elGrocer TaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA7FC3E698664A0262DB62C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0B9206957A6F0F0C6EF9420 /* Pods_elGrocer_Task.framework */,
+				0DF74D9818184A73945FE590 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework */,
+				493E9984EF5959EB7B91F1E4 /* Pods_elGrocer_TaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47DF3BFC2891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer Task" */;
 			buildPhases = (
+				AF9F8B7738540BDEA773BC5B /* [CP] Check Pods Manifest.lock */,
 				47DF3BCE2891439200724ADE /* Sources */,
 				47DF3BCF2891439200724ADE /* Frameworks */,
 				47DF3BD02891439200724ADE /* Resources */,
+				663F4A659922378058F1869E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47DF3BFF2891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer TaskTests" */;
 			buildPhases = (
+				3F7142F55C1452879E7BF345 /* [CP] Check Pods Manifest.lock */,
 				47DF3BE42891439600724ADE /* Sources */,
 				47DF3BE52891439600724ADE /* Frameworks */,
 				47DF3BE62891439600724ADE /* Resources */,
@@ -300,9 +373,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47DF3C022891439700724ADE /* Build configuration list for PBXNativeTarget "elGrocer TaskUITests" */;
 			buildPhases = (
+				172A06D45236F9BFB379EBEB /* [CP] Check Pods Manifest.lock */,
 				47DF3BEE2891439700724ADE /* Sources */,
 				47DF3BEF2891439700724ADE /* Frameworks */,
 				47DF3BF02891439700724ADE /* Resources */,
+				6E94E8DB7950BC8E983CFE67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,6 +461,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		172A06D45236F9BFB379EBEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-elGrocer Task-elGrocer TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F7142F55C1452879E7BF345 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-elGrocer TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		663F4A659922378058F1869E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E94E8DB7950BC8E983CFE67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-elGrocer Task-elGrocer TaskUITests/Pods-elGrocer Task-elGrocer TaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-elGrocer Task-elGrocer TaskUITests/Pods-elGrocer Task-elGrocer TaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-elGrocer Task-elGrocer TaskUITests/Pods-elGrocer Task-elGrocer TaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9F8B7738540BDEA773BC5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-elGrocer Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47DF3BCE2891439200724ADE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -393,6 +571,7 @@
 			files = (
 				47DF78622891F548003AB721 /* CategoryCollectionViewCell.swift in Sources */,
 				47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */,
+				47DF787F28921086003AB721 /* HomeViewPresenter.swift in Sources */,
 				47DF78702891FA03003AB721 /* ProductEndpoint.swift in Sources */,
 				47DF78562891EA13003AB721 /* Encoder.swift in Sources */,
 				47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */,
@@ -400,6 +579,7 @@
 				47DF78692891F96C003AB721 /* URLEncoder.swift in Sources */,
 				47DF787728920753003AB721 /* Category.swift in Sources */,
 				47DF78642891F548003AB721 /* HomeViewController.swift in Sources */,
+				47DF78822892A834003AB721 /* UIViewExtension.swift in Sources */,
 				47DF786E2891F9E4003AB721 /* TokenEndpoint.swift in Sources */,
 				47DF78652891F548003AB721 /* HomeTableViewCell.swift in Sources */,
 				47DF787B289207A9003AB721 /* Product.swift in Sources */,
@@ -580,6 +760,7 @@
 		};
 		47DF3BFD2891439700724ADE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59965AFB10D8D66F7E1FD4C /* Pods-elGrocer Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -607,6 +788,7 @@
 		};
 		47DF3BFE2891439700724ADE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA69D917936F574F505BB98 /* Pods-elGrocer Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -634,6 +816,7 @@
 		};
 		47DF3C002891439700724ADE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071251DF7170DB8EE644FE2C /* Pods-elGrocer TaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,6 +836,7 @@
 		};
 		47DF3C012891439700724ADE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A925EAF5223EF6D2684912 /* Pods-elGrocer TaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -672,6 +856,7 @@
 		};
 		47DF3C032891439700724ADE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75890B1308CC43DC7F7AF8E /* Pods-elGrocer Task-elGrocer TaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -689,6 +874,7 @@
 		};
 		47DF3C042891439700724ADE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D049C019452B02EA4C45907A /* Pods-elGrocer Task-elGrocer TaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

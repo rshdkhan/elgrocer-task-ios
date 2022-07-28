@@ -12,7 +12,7 @@ struct CategoryResponse: Codable {
     let data: [Category]
 }
 
-struct Category: Codable {
+class Category: Codable {
     let id: Int
     let name: String
     let slug: String

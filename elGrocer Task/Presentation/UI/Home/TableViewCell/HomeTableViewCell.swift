@@ -17,11 +17,10 @@ class HomeTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         collectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
-        
     }
     
     func configure() {
-        
+        self.layoutIfNeeded()
     }
 }
 

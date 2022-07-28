@@ -8,11 +8,16 @@
 import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var viewContainer: UIView!
     static let identifier = "CategoryCollectionViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+    }
+    
+    func configure() {
+        contentView.setNeedsLayout()
     }
 
 }
