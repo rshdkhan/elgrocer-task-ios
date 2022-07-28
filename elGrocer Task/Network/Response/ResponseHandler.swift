@@ -35,9 +35,11 @@ class ResponseHandlerImp: ResponseHandler {
             }
             
         case ResponseStatusCode.requestError:
+            print(String(data: data!, encoding: .utf8))
             break
             
         case ResponseStatusCode.serverError:
+            print(String(data: data!, encoding: .utf8))
             return NetworkResponse(error: .other)
             
         default:

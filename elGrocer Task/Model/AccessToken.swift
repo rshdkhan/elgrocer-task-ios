@@ -13,7 +13,7 @@ struct RefreshTokenResponse: Codable {
     let tokenType: String
     let expiresIn: Int
     let scope: String
-    let createdAt: Double
+    let createdAt: Int64
     
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"

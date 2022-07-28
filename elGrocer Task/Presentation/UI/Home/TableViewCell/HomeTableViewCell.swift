@@ -10,6 +10,7 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var lblCaregoryTitle: UILabel!
     
     static let identifier: String = "HomeTableViewCell"
     
@@ -20,8 +21,8 @@ class HomeTableViewCell: UITableViewCell {
         collectionView.register(UINib(nibName: ProductCollectionViewCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: ProductCollectionViewCell.reuseIdentifier)
     }
     
-    func configure() {
-        
+    func configure(category: Category) {
+        lblCaregoryTitle.text = category.name
     }
 }
 

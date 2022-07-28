@@ -7,19 +7,25 @@
 
 import Foundation
 
+struct HomeScreenModel {
+    var category: Category
+    var products: [Product]
+}
+
 protocol HomePresenterInputs {
     func getCategories(forRetailer id: Int)
-    func getProducts(forCategory categoryID: [Int], retailerID: Int, offset: Int, limit: Int)
+    func getProducts(forCategory categoryID: [Category], retailerID: Int, offset: Int, limit: Int)
 }
 
 protocol HomePresenterOutput {
     func homePresenter(categories: [Category])
-    func homePresenter(products: [[Product]])
+    func homePresenter(products: [HomeScreenModel])
     func homePresenter(errorMsg: String)
     func homePresenter(showLoader status: Bool)
 }
 
 final class HomePresenterImp: HomePresenterInputs {
+    
     private var output: HomePresenterOutput
     private var productRepository: ProductRepository
     
@@ -35,9 +41,7 @@ final class HomePresenterImp: HomePresenterInputs {
             if let categories = categories, errorMsg == nil {
                 self.output.homePresenter(categories: categories)
                 
-                let categorieIDs = categories.map { $0.id }
-                self.getProducts(forCategory: categorieIDs, retailerID: id, offset: 0, limit: 10)
-                
+                self.getProducts(forCategory: categories, retailerID: id, offset: 0, limit: 10)
                 return
             }
             
@@ -46,18 +50,19 @@ final class HomePresenterImp: HomePresenterInputs {
         }
     }
     
-    func getProducts(forCategory categoryID: [Int], retailerID: Int, offset: Int, limit: Int) {
+    func getProducts(forCategory categoryID: [Category], retailerID: Int, offset: Int, limit: Int) {
         let dispatchGroup = DispatchGroup()
-        var allProducts: [[Product]] = []
+        var models: [HomeScreenModel] = []
         
         self.output.homePresenter(showLoader: true)
         
-        categoryID.forEach { categoryId in
+        categoryID.forEach { category in
             dispatchGroup.enter()
-            self.productRepository.getProducts(ofCategory: categoryId, retailer: retailerID, offset: offset, limit: limit) { products, errorMsg in
+            self.productRepository.getProducts(ofCategory: category.id, retailer: retailerID, offset: offset, limit: limit) { products, errorMsg in
                 dispatchGroup.leave()
                 if let products = products, errorMsg == nil {
-                    allProducts.append(products)
+//                    allProducts.append(products)
+                    models.append(HomeScreenModel(category: category, products: products))
                     return
                 }
                 
@@ -67,7 +72,7 @@ final class HomePresenterImp: HomePresenterInputs {
         
         dispatchGroup.notify(queue: .main) {
             self.output.homePresenter(showLoader: false)
-            self.output.homePresenter(products: allProducts)
+            self.output.homePresenter(products: models)
         }
     }
 }

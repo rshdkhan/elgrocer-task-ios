@@ -18,11 +18,12 @@ class HomeViewController: UIViewController {
     
     private var storedOffsets = [Int: CGFloat]()
     private var categories: [Category] = []
-    private var products: [[Product]] = []
+    private var homeScreenModels: [HomeScreenModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // table view setup
         self.tableView.delegate = self
         self.tableView.dataSource = self
     
@@ -32,25 +33,20 @@ class HomeViewController: UIViewController {
         self.tableView.register(UINib(nibName: HomeTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: HomeTableViewCell.identifier)
         self.tableView.separatorColor = .clear
         
-        let config = URLSessionConfiguration.default
-                
-                let cache = URLCache(memoryCapacity: 500_000_000, diskCapacity: 1_000_000_000)
-                config.urlCache = cache
-                config.requestCachePolicy = .useProtocolCachePolicy
-        
-        config.requestCachePolicy = .returnCacheDataElseLoad
-        
-        let network = NetworkClientImp(urlSession: URLSession(configuration: config), responseHandler: ResponseHandlerImp())
+        // resolving dependencies
+        let network = NetworkClientImp(urlSession: URLSession(configuration: .default), responseHandler: ResponseHandlerImp())
         let repository = ProductRepositoryImp(networkClient: network)
         let homePresenter = HomePresenterImp(output: self, productRepository: repository)
+        
+        // fetch categories
         homePresenter.getCategories(forRetailer: 16)
     }
 }
 
 // MARK: - Presenter Output
 extension HomeViewController: HomePresenterOutput {
-    func homePresenter(products: [[Product]]) {
-        self.products = products
+    func homePresenter(products: [HomeScreenModel]) {
+        self.homeScreenModels = products
         self.tableView.reloadData()
     }
     
@@ -78,13 +74,15 @@ extension HomeViewController: HomePresenterOutput {
 // MARK: - Table view delegate and datasource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.products.count + 1
+        return self.homeScreenModels.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as! HomeTableViewCell
         
-        cell.configure()
+        if indexPath.row != 0 && indexPath.row < homeScreenModels.count {
+            cell.configure(category: homeScreenModels[indexPath.row].category)
+        }
         return cell
     }
     
@@ -108,7 +106,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 //MARK: - Collection view delegate and datasource
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectionView.tag == 0 ? categories.count : products[collectionView.tag - 1].count
+        return collectionView.tag == 0 ? categories.count : homeScreenModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -123,7 +121,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCollectionViewCell.reuseIdentifier, for: indexPath) as! ProductCollectionViewCell
                 
-            cell.configure(product: products[collectionView.tag - 1][indexPath.row])
+            if collectionView.tag < homeScreenModels.count {
+                cell.configure(product: homeScreenModels[collectionView.tag].products[indexPath.section])
+            }
             return cell
         }
     }
@@ -136,7 +136,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collectionView.frame.width / 4, height: collectionView.frame.width / 4)
         }
         
-        return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.width / 1.5)
+        return CGSize(width: collectionView.frame.width / 2.5, height: collectionView.frame.width / 1.5)
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
