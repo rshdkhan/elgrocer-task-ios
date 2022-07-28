@@ -12,7 +12,15 @@ struct CategoryResponse: Codable {
     let data: [Category]
 }
 
-class Category: Codable {
+class Category: Codable, NSCoding {
+    func encode(with coder: NSCoder) {
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+    
     let id: Int
     let name: String
     let slug: String

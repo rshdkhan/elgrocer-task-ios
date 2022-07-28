@@ -31,10 +31,10 @@ extension TokenEndpoints: Endpoint {
     
     var parameters: Parameters {
         let params: [String: Any] = [
-            "client_id": "ddTSGprXlCYJhQIIj1wCuvDgNz-ddvcjCjPz3iUrHmc",
-            "client_secret": "RCVDiI8HdLjolcIMStyfyu7mQeP23SFaJKJgmy0bXUg",
-            "grant_type": "client_credentials",
-            "redirect_uri": "https://el-grocer-staging-dev.herokuapp.com"
+            "client_id": Constatns.clientID,
+            "client_secret": Constatns.clientSecret,
+            "grant_type": Constatns.grantType,
+            "redirect_uri": Constatns.redirectUri
         ]
         
         return params

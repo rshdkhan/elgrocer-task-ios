@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00C64EF37569CDA733DC4C00 /* Pods_elGrocer_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B9206957A6F0F0C6EF9420 /* Pods_elGrocer_Task.framework */; };
+		472F80BA2892FC6200886D6C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80B92892FC6200886D6C /* Constants.swift */; };
+		472F80BE2893084C00886D6C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80BC2893084C00886D6C /* SplashViewController.swift */; };
+		472F80BF2893084C00886D6C /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 472F80BD2893084C00886D6C /* SplashViewController.xib */; };
+		472F80C1289308E000886D6C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80C0289308E000886D6C /* Session.swift */; };
+		472F80C328930DB800886D6C /* SplashViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80C228930DB800886D6C /* SplashViewPresenter.swift */; };
+		472F80C528930ECB00886D6C /* TokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80C428930ECB00886D6C /* TokenRepository.swift */; };
 		47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD52891439200724ADE /* AppDelegate.swift */; };
 		47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF3BD72891439200724ADE /* SceneDelegate.swift */; };
 		47DF3BDD2891439200724ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DF3BDB2891439200724ADE /* Main.storyboard */; };
@@ -63,6 +69,12 @@
 		071251DF7170DB8EE644FE2C /* Pods-elGrocer TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-elGrocer TaskTests/Pods-elGrocer TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0DF74D9818184A73945FE590 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elGrocer_Task_elGrocer_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA69D917936F574F505BB98 /* Pods-elGrocer Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task.release.xcconfig"; path = "Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task.release.xcconfig"; sourceTree = "<group>"; };
+		472F80B92892FC6200886D6C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		472F80BC2893084C00886D6C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		472F80BD2893084C00886D6C /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		472F80C0289308E000886D6C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		472F80C228930DB800886D6C /* SplashViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewPresenter.swift; sourceTree = "<group>"; };
+		472F80C428930ECB00886D6C /* TokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepository.swift; sourceTree = "<group>"; };
 		47DF3BD22891439200724ADE /* elGrocer Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "elGrocer Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DF3BD52891439200724ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47DF3BD72891439200724ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +145,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472F80B82892FC4700886D6C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				472F80B92892FC6200886D6C /* Constants.swift */,
+				472F80C0289308E000886D6C /* Session.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		472F80BB2893082600886D6C /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				472F80BC2893084C00886D6C /* SplashViewController.swift */,
+				472F80BD2893084C00886D6C /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		47DF3BC92891439200724ADE = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +188,7 @@
 		47DF3BD42891439200724ADE /* elGrocer Task */ = {
 			isa = PBXGroup;
 			children = (
+				472F80B82892FC4700886D6C /* Helpers */,
 				47DF78802892A81C003AB721 /* Extension */,
 				47DF787528920744003AB721 /* Model */,
 				47DF78712891FAFB003AB721 /* Repository */,
@@ -273,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				47DF78722891FB10003AB721 /* ProductRepository.swift */,
+				472F80C428930ECB00886D6C /* TokenRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -290,6 +322,7 @@
 		47DF787C28921048003AB721 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				472F80BB2893082600886D6C /* Splash */,
 				47DF785A2891F548003AB721 /* Home */,
 			);
 			path = UI;
@@ -299,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				47DF787E28921086003AB721 /* HomeViewPresenter.swift */,
+				472F80C228930DB800886D6C /* SplashViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -446,6 +480,7 @@
 				47DF78632891F548003AB721 /* CategoryCollectionViewCell.xib in Resources */,
 				47DF3BE22891439600724ADE /* LaunchScreen.storyboard in Resources */,
 				47DF78912892B7A7003AB721 /* ProductCollectionViewCell.xib in Resources */,
+				472F80BF2893084C00886D6C /* SplashViewController.xib in Resources */,
 				47DF3BDF2891439600724ADE /* Assets.xcassets in Resources */,
 				47DF78662891F548003AB721 /* HomeTableViewCell.xib in Resources */,
 				47DF3BDD2891439200724ADE /* Main.storyboard in Resources */,
@@ -577,14 +612,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DF78622891F548003AB721 /* CategoryCollectionViewCell.swift in Sources */,
+				472F80BA2892FC6200886D6C /* Constants.swift in Sources */,
 				47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */,
 				47DF78902892B7A7003AB721 /* ProductCollectionViewCell.swift in Sources */,
 				47DF787F28921086003AB721 /* HomeViewPresenter.swift in Sources */,
+				472F80BE2893084C00886D6C /* SplashViewController.swift in Sources */,
 				47DF78702891FA03003AB721 /* ProductEndpoint.swift in Sources */,
 				47DF78562891EA13003AB721 /* Encoder.swift in Sources */,
 				47DF3BD82891439200724ADE /* SceneDelegate.swift in Sources */,
+				472F80C528930ECB00886D6C /* TokenRepository.swift in Sources */,
 				47DF784D2891E5E3003AB721 /* NetworkClient.swift in Sources */,
 				47DF78692891F96C003AB721 /* URLEncoder.swift in Sources */,
+				472F80C328930DB800886D6C /* SplashViewPresenter.swift in Sources */,
 				47DF787728920753003AB721 /* Category.swift in Sources */,
 				47DF78642891F548003AB721 /* HomeViewController.swift in Sources */,
 				47DF78822892A834003AB721 /* UIViewExtension.swift in Sources */,
@@ -594,6 +633,7 @@
 				47DF78792892078C003AB721 /* AccessToken.swift in Sources */,
 				47DF78582891EEA4003AB721 /* ResponseHandler.swift in Sources */,
 				47DF78732891FB10003AB721 /* ProductRepository.swift in Sources */,
+				472F80C1289308E000886D6C /* Session.swift in Sources */,
 				47DF78532891E892003AB721 /* Endpoint.swift in Sources */,
 				47DF786B2891F97A003AB721 /* JsonEncoder.swift in Sources */,
 				47DF78502891E67B003AB721 /* Response.swift in Sources */,

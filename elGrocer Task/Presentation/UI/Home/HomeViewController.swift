@@ -33,10 +33,10 @@ class HomeViewController: UIViewController {
         self.tableView.separatorColor = .clear
         
         let config = URLSessionConfiguration.default
-        
-        let cache = URLCache(memoryCapacity: 500_000_000, diskCapacity: 1_000_000_000)
-        config.urlCache = cache
-        config.requestCachePolicy = .useProtocolCachePolicy
+                
+                let cache = URLCache(memoryCapacity: 500_000_000, diskCapacity: 1_000_000_000)
+                config.urlCache = cache
+                config.requestCachePolicy = .useProtocolCachePolicy
         
         config.requestCachePolicy = .returnCacheDataElseLoad
         

@@ -13,7 +13,7 @@ protocol ProductRepository {
 }
 
 class ProductRepositoryImp: ProductRepository {
-    var networkClient: NetworkClient
+    private var networkClient: NetworkClient
     
     init(networkClient: NetworkClient) {
         self.networkClient = networkClient
@@ -25,6 +25,7 @@ class ProductRepositoryImp: ProductRepository {
                 
             case .success:
                 completion(response.data?.data, nil)
+                self.cache(object: (response.data?.data.first!)!)
                 break
                 
             case .failure:
@@ -48,5 +49,10 @@ class ProductRepositoryImp: ProductRepository {
                 break
             }
         }
+    }
+    
+    private func cache(object: Category) {
+//        cache.setObject(object: object, forKey: "obj")
+//        print("cache data >>> \(cache["obj"])")
     }
 }
