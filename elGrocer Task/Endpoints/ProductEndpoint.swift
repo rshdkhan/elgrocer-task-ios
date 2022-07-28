@@ -33,7 +33,7 @@ extension ProductEndpoint: Endpoint {
     
     var headers: HttpHeaders? {
         return [
-            "access_token": "g_9Fi4dyhoUaTW0ma5Ok9lB8uOTZR0vJoqR9IAQo5Yk",
+            "access_token": "XPT_qbKaH32jFK8ffo9X2fO9hI5aw6DapI6f5q2j-hQ",
             "Locale": "en"
         ]
     }

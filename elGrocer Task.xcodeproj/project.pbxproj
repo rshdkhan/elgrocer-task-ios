@@ -36,6 +36,8 @@
 		47DF787B289207A9003AB721 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF787A289207A9003AB721 /* Product.swift */; };
 		47DF787F28921086003AB721 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF787E28921086003AB721 /* HomeViewPresenter.swift */; };
 		47DF78822892A834003AB721 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF78812892A834003AB721 /* UIViewExtension.swift */; };
+		47DF78902892B7A7003AB721 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF788E2892B7A7003AB721 /* ProductCollectionViewCell.swift */; };
+		47DF78912892B7A7003AB721 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DF788F2892B7A7003AB721 /* ProductCollectionViewCell.xib */; };
 		9F4B4CBD64BFD9C3A5243936 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF74D9818184A73945FE590 /* Pods_elGrocer_Task_elGrocer_TaskUITests.framework */; };
 		A900361C8E204A799EFD085A /* Pods_elGrocer_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E9984EF5959EB7B91F1E4 /* Pods_elGrocer_TaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -93,6 +95,8 @@
 		47DF787A289207A9003AB721 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		47DF787E28921086003AB721 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		47DF78812892A834003AB721 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		47DF788E2892B7A7003AB721 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		47DF788F2892B7A7003AB721 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		493E9984EF5959EB7B91F1E4 /* Pods_elGrocer_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elGrocer_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A925EAF5223EF6D2684912 /* Pods-elGrocer TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer TaskTests.release.xcconfig"; path = "Target Support Files/Pods-elGrocer TaskTests/Pods-elGrocer TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A59965AFB10D8D66F7E1FD4C /* Pods-elGrocer Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task.debug.xcconfig"; path = "Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task.debug.xcconfig"; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				47DF785C2891F548003AB721 /* CategoryCollectionViewCell.swift */,
 				47DF785D2891F548003AB721 /* CategoryCollectionViewCell.xib */,
+				47DF788E2892B7A7003AB721 /* ProductCollectionViewCell.swift */,
+				47DF788F2892B7A7003AB721 /* ProductCollectionViewCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 			files = (
 				47DF78632891F548003AB721 /* CategoryCollectionViewCell.xib in Resources */,
 				47DF3BE22891439600724ADE /* LaunchScreen.storyboard in Resources */,
+				47DF78912892B7A7003AB721 /* ProductCollectionViewCell.xib in Resources */,
 				47DF3BDF2891439600724ADE /* Assets.xcassets in Resources */,
 				47DF78662891F548003AB721 /* HomeTableViewCell.xib in Resources */,
 				47DF3BDD2891439200724ADE /* Main.storyboard in Resources */,
@@ -571,6 +578,7 @@
 			files = (
 				47DF78622891F548003AB721 /* CategoryCollectionViewCell.swift in Sources */,
 				47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */,
+				47DF78902892B7A7003AB721 /* ProductCollectionViewCell.swift in Sources */,
 				47DF787F28921086003AB721 /* HomeViewPresenter.swift in Sources */,
 				47DF78702891FA03003AB721 /* ProductEndpoint.swift in Sources */,
 				47DF78562891EA13003AB721 /* Encoder.swift in Sources */,

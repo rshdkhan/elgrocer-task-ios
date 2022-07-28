@@ -7,6 +7,7 @@ target 'elGrocer Task' do
 
   # Pods for elGrocer Task
   pod 'ProgressHUD'
+  pod 'SDWebImage', '~> 5.0'
 
   target 'elGrocer TaskTests' do
     inherit! :search_paths
