@@ -12,6 +12,8 @@ class HomeTableViewHeader: UITableViewHeaderFooterView {
     
     private var categories: [Category] = []
     static let identifier: String = "HomeTableViewHeader"
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var btnViewAll: UIButton!
     
     override func awakeFromNib() {
         
@@ -22,6 +24,9 @@ class HomeTableViewHeader: UITableViewHeaderFooterView {
     }
     
     func configure(categories: [Category]) {
+        lblTitle.isHidden = categories.count == 0
+        btnViewAll.isHidden = categories.count == 0
+        
         self.categories = categories
         self.collectionView.reloadData()
     }

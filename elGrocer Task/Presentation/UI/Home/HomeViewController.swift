@@ -14,6 +14,16 @@ class HomeViewController: UIViewController {
     private var storedOffsets = [Int: CGFloat]()
     private var categories: [Category] = []
     private var homeScreenModels: [HomeScreenModel] = []
+    private let refreshControl = UIRefreshControl()
+    private var presenter: HomePresenterInputs!
+    
+    private lazy var emptyView: UIView = {
+        let view = UIView()
+        
+        view.backgroundColor = .blue
+        
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,25 +39,37 @@ class HomeViewController: UIViewController {
         self.tableView.register(UINib(nibName: HomeTableViewHeader.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: HomeTableViewHeader.identifier)
         self.tableView.separatorColor = .clear
         
+        // pull to refresh
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        
         // resolving dependencies
         let network = NetworkClientImp(urlSession: URLSession(configuration: .default), responseHandler: ResponseHandlerImp())
         let repository = ProductRepositoryImp(networkClient: network)
-        let homePresenter = HomePresenterImp(output: self, productRepository: repository)
+        self.presenter = HomePresenterImp(output: self, productRepository: repository)
         
         // fetch categories
-        homePresenter.getCategories(forRetailer: 16)
+        presenter.getCategories(forRetailer: 16)
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        presenter.getCategories(forRetailer: 16)
     }
 }
 
 // MARK: - Presenter Output
 extension HomeViewController: HomePresenterOutput {
     func homePresenter(products: [HomeScreenModel]) {
+        self.refreshControl.endRefreshing()
+        
         self.homeScreenModels = products
         self.tableView.reloadData()
     }
     
     func homePresenter(categories: [Category]) {
         self.categories = categories
+        
         
         DispatchQueue.main.async {
             self.tableView.reloadSections([0], with: .automatic)
@@ -59,10 +81,14 @@ extension HomeViewController: HomePresenterOutput {
             ProgressHUD.show()
         } else {
             ProgressHUD.dismiss()
+            self.refreshControl.endRefreshing()
         }
     }
     
     func homePresenter(errorMsg: String) {
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+        }
         print("failed with some error >> \(errorMsg)")
     }
 }

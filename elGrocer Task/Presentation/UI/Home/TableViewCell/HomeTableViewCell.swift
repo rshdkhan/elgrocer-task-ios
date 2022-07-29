@@ -25,7 +25,7 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func configure(category: Category, product: [Product]) {
-        lblCaregoryTitle.text = category.name
+        self.lblCaregoryTitle.text = category.name
         self.products = product
         self.collectionView.reloadData()
     }

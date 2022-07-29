@@ -10,6 +10,7 @@
 		00C64EF37569CDA733DC4C00 /* Pods_elGrocer_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B9206957A6F0F0C6EF9420 /* Pods_elGrocer_Task.framework */; };
 		471FB64C289346DD00A32991 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FB64B289346DD00A32991 /* HomeTableViewHeader.swift */; };
 		471FB64E289346F400A32991 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471FB64D289346F400A32991 /* HomeTableViewHeader.xib */; };
+		471FB65028935EFB00A32991 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FB64F28935EFB00A32991 /* DateExtension.swift */; };
 		472F80BA2892FC6200886D6C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80B92892FC6200886D6C /* Constants.swift */; };
 		472F80BE2893084C00886D6C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F80BC2893084C00886D6C /* SplashViewController.swift */; };
 		472F80BF2893084C00886D6C /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 472F80BD2893084C00886D6C /* SplashViewController.xib */; };
@@ -73,6 +74,7 @@
 		1AA69D917936F574F505BB98 /* Pods-elGrocer Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elGrocer Task.release.xcconfig"; path = "Target Support Files/Pods-elGrocer Task/Pods-elGrocer Task.release.xcconfig"; sourceTree = "<group>"; };
 		471FB64B289346DD00A32991 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
 		471FB64D289346F400A32991 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		471FB64F28935EFB00A32991 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		472F80B92892FC6200886D6C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		472F80BC2893084C00886D6C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		472F80BD2893084C00886D6C /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				47DF78812892A834003AB721 /* UIViewExtension.swift */,
+				471FB64F28935EFB00A32991 /* DateExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DF78622891F548003AB721 /* CategoryCollectionViewCell.swift in Sources */,
+				471FB65028935EFB00A32991 /* DateExtension.swift in Sources */,
 				472F80BA2892FC6200886D6C /* Constants.swift in Sources */,
 				47DF3BD62891439200724ADE /* AppDelegate.swift in Sources */,
 				47DF78902892B7A7003AB721 /* ProductCollectionViewCell.swift in Sources */,

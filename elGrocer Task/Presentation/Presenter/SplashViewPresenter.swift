@@ -28,13 +28,16 @@ final class SplashViewPresenter: SplashPresenterInputs {
     func refreshToken() {
         self.tokenRepository.refreshToken { refreshToken, errorMsg in
             
-            if let refreshToken = refreshToken, errorMsg == nil {
-                Session.instance.create(tokenResponse: refreshToken)
-                self.output.splashPresenter(refreshToken: refreshToken)
-                return
+            DispatchQueue.main.async {
+                
+                if let refreshToken = refreshToken, errorMsg == nil {
+                    Session.instance.create(tokenResponse: refreshToken)
+                    self.output.splashPresenter(refreshToken: refreshToken)
+                    return
+                }
+                
+                self.output.splashPreseter(errorMsg: errorMsg ?? "Define a common error msg")
             }
-            
-            self.output.splashPreseter(errorMsg: errorMsg ?? "Define a common error msg")
         }
     }
 }

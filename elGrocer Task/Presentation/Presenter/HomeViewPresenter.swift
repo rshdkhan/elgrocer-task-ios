@@ -39,14 +39,17 @@ final class HomePresenterImp: HomePresenterInputs {
         self.productRepository.getCategories(retailer: id) { categories, errorMsg in
             
             if let categories = categories, errorMsg == nil {
-                self.output.homePresenter(categories: categories)
+                DispatchQueue.main.async { [weak self] in
+                    self?.output.homePresenter(categories: categories)
+                }
                 
                 self.getProducts(forCategory: categories, retailerID: id, offset: 0, limit: 10)
                 return
             }
             
-            self.output.homePresenter(errorMsg: errorMsg ?? "Define a common error msg")
-
+            DispatchQueue.main.async { [weak self] in
+                self?.output.homePresenter(errorMsg: errorMsg ?? "Define a common error msg")
+            }
         }
     }
     
@@ -61,7 +64,6 @@ final class HomePresenterImp: HomePresenterInputs {
             self.productRepository.getProducts(ofCategory: category.id, retailer: retailerID, offset: offset, limit: limit) { products, errorMsg in
                 dispatchGroup.leave()
                 if let products = products, errorMsg == nil {
-//                    allProducts.append(products)
                     models.append(HomeScreenModel(category: category, products: products))
                     return
                 }

@@ -89,7 +89,9 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="btnViewAll" destination="LIM-e6-aCC" id="XXs-kg-MaE"/>
                 <outlet property="collectionView" destination="u47-Ys-hr5" id="ShZ-2n-CPw"/>
+                <outlet property="lblTitle" destination="jqg-7i-bOQ" id="ESn-ZO-64R"/>
             </connections>
             <point key="canvasLocation" x="198.55072463768118" y="-135.26785714285714"/>
         </view>
