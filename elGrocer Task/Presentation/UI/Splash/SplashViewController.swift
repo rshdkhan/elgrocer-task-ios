@@ -16,15 +16,14 @@ class SplashViewController: UIViewController {
         let tokenRepository = TokenRepositoryImp(networkClient: network)
         let splashPresenter: SplashPresenterInputs = SplashViewPresenter(tokenRepository: tokenRepository, output: self)
         
-//        if Session.instance.isValid {
+        if Session.instance.isValid {
             if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
                 let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
                 scene.changeRootVC(rootVC: homeVC)
             }
-//        } else {
-//            print("token required")
-////            splashPresenter.refreshToken()
-//        }
+        } else {
+            splashPresenter.refreshToken()
+        }
         
         print("isValid >>", Session.instance.isValid)
     }
